@@ -10,9 +10,24 @@
 		91F84493293504E2004B7E1F /* OtusHomework.h in Headers */ = {isa = PBXBuildFile; fileRef = 91F84492293504E2004B7E1F /* OtusHomework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		91F8449A29350AA2004B7E1F /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F8449929350AA2004B7E1F /* Storyboard.storyboard */; };
 		91F8449E29350BCE004B7E1F /* OtusHomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F8449D29350BCE004B7E1F /* OtusHomeworkViewController.swift */; };
-		AE870937293543B900BDF09C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AE870936293543B900BDF09C /* SnapKit */; };
 		AE870939293543FF00BDF09C /* Asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE870938293543FF00BDF09C /* Asset.xcassets */; };
+		AE87093E293546DC00BDF09C /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = AE87093D293546DC00BDF09C /* SnapKit-Dynamic */; };
+		AE87093F293546DC00BDF09C /* SnapKit-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = AE87093D293546DC00BDF09C /* SnapKit-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE870940293546DC00BDF09C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AE87093F293546DC00BDF09C /* SnapKit-Dynamic in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		91F8448F293504E2004B7E1F /* OtusHomework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OtusHomework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE870937293543B900BDF09C /* SnapKit in Frameworks */,
+				AE87093E293546DC00BDF09C /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +54,7 @@
 			children = (
 				91F84491293504E2004B7E1F /* OtusHomework */,
 				91F84490293504E2004B7E1F /* Products */,
+				AE87093A293546CC00BDF09C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +75,13 @@
 				91F8449929350AA2004B7E1F /* Storyboard.storyboard */,
 			);
 			path = OtusHomework;
+			sourceTree = "<group>";
+		};
+		AE87093A293546CC00BDF09C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +106,7 @@
 				91F8448B293504E2004B7E1F /* Sources */,
 				91F8448C293504E2004B7E1F /* Frameworks */,
 				91F8448D293504E2004B7E1F /* Resources */,
+				AE870940293546DC00BDF09C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -90,7 +114,7 @@
 			);
 			name = OtusHomework;
 			packageProductDependencies = (
-				AE870936293543B900BDF09C /* SnapKit */,
+				AE87093D293546DC00BDF09C /* SnapKit-Dynamic */,
 			);
 			productName = OtusHomework;
 			productReference = 91F8448F293504E2004B7E1F /* OtusHomework.framework */;
@@ -279,6 +303,7 @@
 		91F84497293504E2004B7E1F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -299,6 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nikkogladkko.OtusHomework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -309,6 +335,7 @@
 		91F84498293504E2004B7E1F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -329,6 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nikkogladkko.OtusHomework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -370,10 +398,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AE870936293543B900BDF09C /* SnapKit */ = {
+		AE87093D293546DC00BDF09C /* SnapKit-Dynamic */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AE870935293543B900BDF09C /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
+			productName = "SnapKit-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
