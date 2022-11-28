@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "OtusHomework"
-  spec.version      = "0.0.8"
+  spec.version      = "0.0.9"
   spec.summary      = "OTUS Homework module for demonstrations"
 
   spec.description  = <<-DESC

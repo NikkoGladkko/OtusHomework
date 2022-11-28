@@ -11,10 +11,12 @@ import SnapKit
 
 public class OtusHomeworkViewController: UIViewController {
     public override func viewDidLoad() {
-        view.backgroundColor = .gray
+        view.backgroundColor = .magenta
         let studentLabel = UILabel()
-        studentLabel.font = .systemFont(ofSize: 20)
+        studentLabel.font = .systemFont(ofSize: 48, weight: .ultraLight)
         studentLabel.text = "Николай Гладковский"
+        studentLabel.textColor = .white
+        studentLabel.textAlignment = .center
         studentLabel.numberOfLines = 0
         view.addSubview(studentLabel)
         
