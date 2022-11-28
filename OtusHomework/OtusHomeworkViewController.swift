@@ -9,9 +9,17 @@ import Foundation
 import UIKit
 import SnapKit
 
-public class OtusHomeworkViewController: UIViewController {
+public protocol OtusHomeworkView: AnyObject {
+    var squareView: UIView { get }
+}
+
+public class OtusHomeworkViewController: UIViewController, OtusHomeworkView {
+    public var squareView: UIView {
+        return view
+    }
+    
     public override func viewDidLoad() {
-        view.backgroundColor = .magenta
+        view.backgroundColor = .orange
         let studentLabel = UILabel()
         studentLabel.font = .systemFont(ofSize: 48, weight: .ultraLight)
         studentLabel.text = "Николай Гладковский"
