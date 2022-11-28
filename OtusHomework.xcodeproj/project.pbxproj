@@ -9,16 +9,17 @@
 /* Begin PBXBuildFile section */
 		91F84493293504E2004B7E1F /* OtusHomework.h in Headers */ = {isa = PBXBuildFile; fileRef = 91F84492293504E2004B7E1F /* OtusHomework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		91F8449A29350AA2004B7E1F /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F8449929350AA2004B7E1F /* Storyboard.storyboard */; };
-		91F8449C29350B08004B7E1F /* Nikolay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91F8449B29350B08004B7E1F /* Nikolay.jpg */; };
 		91F8449E29350BCE004B7E1F /* OtusHomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F8449D29350BCE004B7E1F /* OtusHomeworkViewController.swift */; };
+		AE870937293543B900BDF09C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AE870936293543B900BDF09C /* SnapKit */; };
+		AE870939293543FF00BDF09C /* Asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE870938293543FF00BDF09C /* Asset.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		91F8448F293504E2004B7E1F /* OtusHomework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OtusHomework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F84492293504E2004B7E1F /* OtusHomework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtusHomework.h; sourceTree = "<group>"; };
 		91F8449929350AA2004B7E1F /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		91F8449B29350B08004B7E1F /* Nikolay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Nikolay.jpg; sourceTree = "<group>"; };
 		91F8449D29350BCE004B7E1F /* OtusHomeworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtusHomeworkViewController.swift; sourceTree = "<group>"; };
+		AE870938293543FF00BDF09C /* Asset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Asset.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE870937293543B900BDF09C /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +55,7 @@
 			children = (
 				91F84492293504E2004B7E1F /* OtusHomework.h */,
 				91F8449D29350BCE004B7E1F /* OtusHomeworkViewController.swift */,
-				91F8449B29350B08004B7E1F /* Nikolay.jpg */,
+				AE870938293543FF00BDF09C /* Asset.xcassets */,
 				91F8449929350AA2004B7E1F /* Storyboard.storyboard */,
 			);
 			path = OtusHomework;
@@ -87,6 +89,9 @@
 			dependencies = (
 			);
 			name = OtusHomework;
+			packageProductDependencies = (
+				AE870936293543B900BDF09C /* SnapKit */,
+			);
 			productName = OtusHomework;
 			productReference = 91F8448F293504E2004B7E1F /* OtusHomework.framework */;
 			productType = "com.apple.product-type.framework";
@@ -115,6 +120,9 @@
 				Base,
 			);
 			mainGroup = 91F84485293504E2004B7E1F;
+			packageReferences = (
+				AE870935293543B900BDF09C /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 91F84490293504E2004B7E1F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,8 +137,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE870939293543FF00BDF09C /* Asset.xcassets in Resources */,
 				91F8449A29350AA2004B7E1F /* Storyboard.storyboard in Resources */,
-				91F8449C29350B08004B7E1F /* Nikolay.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +357,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AE870935293543B900BDF09C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AE870936293543B900BDF09C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE870935293543B900BDF09C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 91F84486293504E2004B7E1F /* Project object */;
 }
