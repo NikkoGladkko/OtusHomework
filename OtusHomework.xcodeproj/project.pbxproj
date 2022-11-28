@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		91F84493293504E2004B7E1F /* OtusHomework.h in Headers */ = {isa = PBXBuildFile; fileRef = 91F84492293504E2004B7E1F /* OtusHomework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91F8449A29350AA2004B7E1F /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F8449929350AA2004B7E1F /* Storyboard.storyboard */; };
+		91F8449C29350B08004B7E1F /* Nikolay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91F8449B29350B08004B7E1F /* Nikolay.jpg */; };
+		91F8449E29350BCE004B7E1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F8449D29350BCE004B7E1F /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		91F8448F293504E2004B7E1F /* OtusHomework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OtusHomework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F84492293504E2004B7E1F /* OtusHomework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtusHomework.h; sourceTree = "<group>"; };
+		91F8449929350AA2004B7E1F /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		91F8449B29350B08004B7E1F /* Nikolay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Nikolay.jpg; sourceTree = "<group>"; };
+		91F8449D29350BCE004B7E1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +52,9 @@
 			isa = PBXGroup;
 			children = (
 				91F84492293504E2004B7E1F /* OtusHomework.h */,
+				91F8449D29350BCE004B7E1F /* ViewController.swift */,
+				91F8449B29350B08004B7E1F /* Nikolay.jpg */,
+				91F8449929350AA2004B7E1F /* Storyboard.storyboard */,
 			);
 			path = OtusHomework;
 			sourceTree = "<group>";
@@ -93,6 +102,7 @@
 				TargetAttributes = {
 					91F8448E293504E2004B7E1F = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -119,6 +129,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91F8449A29350AA2004B7E1F /* Storyboard.storyboard in Resources */,
+				91F8449C29350B08004B7E1F /* Nikolay.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91F8449E29350BCE004B7E1F /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +271,7 @@
 		91F84497293504E2004B7E1F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -278,6 +292,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +301,7 @@
 		91F84498293504E2004B7E1F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
