@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		91F84493293504E2004B7E1F /* OtusHomework.h in Headers */ = {isa = PBXBuildFile; fileRef = 91F84492293504E2004B7E1F /* OtusHomework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		91F8449A29350AA2004B7E1F /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F8449929350AA2004B7E1F /* Storyboard.storyboard */; };
 		91F8449E29350BCE004B7E1F /* OtusHomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F8449D29350BCE004B7E1F /* OtusHomeworkViewController.swift */; };
 		AE870939293543FF00BDF09C /* Asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE870938293543FF00BDF09C /* Asset.xcassets */; };
 		AE87093E293546DC00BDF09C /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = AE87093D293546DC00BDF09C /* SnapKit-Dynamic */; };
@@ -32,7 +31,6 @@
 /* Begin PBXFileReference section */
 		91F8448F293504E2004B7E1F /* OtusHomework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OtusHomework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F84492293504E2004B7E1F /* OtusHomework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtusHomework.h; sourceTree = "<group>"; };
-		91F8449929350AA2004B7E1F /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		91F8449D29350BCE004B7E1F /* OtusHomeworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtusHomeworkViewController.swift; sourceTree = "<group>"; };
 		AE870938293543FF00BDF09C /* Asset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Asset.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,7 +70,6 @@
 				91F84492293504E2004B7E1F /* OtusHomework.h */,
 				91F8449D29350BCE004B7E1F /* OtusHomeworkViewController.swift */,
 				AE870938293543FF00BDF09C /* Asset.xcassets */,
-				91F8449929350AA2004B7E1F /* Storyboard.storyboard */,
 			);
 			path = OtusHomework;
 			sourceTree = "<group>";
@@ -162,7 +159,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE870939293543FF00BDF09C /* Asset.xcassets in Resources */,
-				91F8449A29350AA2004B7E1F /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

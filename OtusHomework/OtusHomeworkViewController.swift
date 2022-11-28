@@ -12,13 +12,15 @@ import SnapKit
 public class OtusHomeworkViewController: UIViewController {
     public override func viewDidLoad() {
         view.backgroundColor = .gray
-        let imageView = UIImageView(image: UIImage(named: "profileImage"))
-        view.addSubview(imageView)
+        let studentLabel = UILabel()
+        studentLabel.font = .systemFont(ofSize: 20)
+        studentLabel.text = "Николай Гладковский"
+        studentLabel.numberOfLines = 0
+        view.addSubview(studentLabel)
         
-        imageView.snp.makeConstraints { make in
+        studentLabel.snp.makeConstraints { make in
             make.horizontalEdges.equalToSuperview()
             make.centerY.equalToSuperview()
-            make.height.equalTo(imageView.snp.width)
         }
     }
 }
