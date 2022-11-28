@@ -10,7 +10,7 @@
 		91F84493293504E2004B7E1F /* OtusHomework.h in Headers */ = {isa = PBXBuildFile; fileRef = 91F84492293504E2004B7E1F /* OtusHomework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		91F8449A29350AA2004B7E1F /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F8449929350AA2004B7E1F /* Storyboard.storyboard */; };
 		91F8449C29350B08004B7E1F /* Nikolay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91F8449B29350B08004B7E1F /* Nikolay.jpg */; };
-		91F8449E29350BCE004B7E1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F8449D29350BCE004B7E1F /* ViewController.swift */; };
+		91F8449E29350BCE004B7E1F /* OtusHomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F8449D29350BCE004B7E1F /* OtusHomeworkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,7 +18,7 @@
 		91F84492293504E2004B7E1F /* OtusHomework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtusHomework.h; sourceTree = "<group>"; };
 		91F8449929350AA2004B7E1F /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		91F8449B29350B08004B7E1F /* Nikolay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Nikolay.jpg; sourceTree = "<group>"; };
-		91F8449D29350BCE004B7E1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		91F8449D29350BCE004B7E1F /* OtusHomeworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtusHomeworkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				91F84492293504E2004B7E1F /* OtusHomework.h */,
-				91F8449D29350BCE004B7E1F /* ViewController.swift */,
+				91F8449D29350BCE004B7E1F /* OtusHomeworkViewController.swift */,
 				91F8449B29350B08004B7E1F /* Nikolay.jpg */,
 				91F8449929350AA2004B7E1F /* Storyboard.storyboard */,
 			);
@@ -141,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91F8449E29350BCE004B7E1F /* ViewController.swift in Sources */,
+				91F8449E29350BCE004B7E1F /* OtusHomeworkViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
