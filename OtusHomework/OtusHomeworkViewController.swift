@@ -9,11 +9,11 @@ import Foundation
 import UIKit
 import SnapKit
 
-public protocol OtusHomeworkView: AnyObject {
+public protocol HasOtusHomeworkView: AnyObject {
     var squareView: UIView { get }
 }
 
-public class OtusHomeworkViewController: UIViewController, OtusHomeworkView {
+public class OtusHomeworkViewController: UIViewController, HasOtusHomeworkView {
     public var squareView: UIView {
         return view
     }
