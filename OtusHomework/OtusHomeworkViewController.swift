@@ -16,25 +16,22 @@ public protocol HasOtusHomeworkView: AnyObject {
 
 public extension HasOtusHomeworkView {
     var squareView: UIView? {
-        OtusHomeworkViewController().view
+        nil
     }
     
     var squareViewController: UIViewController? {
-        OtusHomeworkViewController()
+        nil
     }
 }
 
 public class OtusHomeworkViewController: UIViewController, HasOtusHomeworkView {
-    public var squareView: UIView {
-        return view
-    }
     
     public override func viewDidLoad() {
-        view.backgroundColor = .orange
+        view.backgroundColor = .gray
         let studentLabel = UILabel()
         studentLabel.font = .systemFont(ofSize: 48, weight: .ultraLight)
         studentLabel.text = "ФИО Студента"
-        studentLabel.textColor = .gray
+        studentLabel.textColor = .darkGray
         studentLabel.textAlignment = .center
         studentLabel.numberOfLines = 0
         view.addSubview(studentLabel)
