@@ -10,7 +10,18 @@ import UIKit
 import SnapKit
 
 public protocol HasOtusHomeworkView: AnyObject {
-    var squareView: UIView { get }
+    var squareView: UIView? { get }
+    var squareViewController: UIViewController? { get }
+}
+
+public extension HasOtusHomeworkView {
+    var squareView: UIView? {
+        OtusHomeworkViewController().view
+    }
+    
+    var squareViewController: UIViewController? {
+        OtusHomeworkViewController()
+    }
 }
 
 public class OtusHomeworkViewController: UIViewController, HasOtusHomeworkView {
@@ -22,8 +33,8 @@ public class OtusHomeworkViewController: UIViewController, HasOtusHomeworkView {
         view.backgroundColor = .orange
         let studentLabel = UILabel()
         studentLabel.font = .systemFont(ofSize: 48, weight: .ultraLight)
-        studentLabel.text = "Николай Гладковский"
-        studentLabel.textColor = .white
+        studentLabel.text = "ФИО Студента"
+        studentLabel.textColor = .gray
         studentLabel.textAlignment = .center
         studentLabel.numberOfLines = 0
         view.addSubview(studentLabel)
