@@ -10,22 +10,14 @@ import UIKit
 import SnapKit
 
 public protocol HasOtusHomeworkView: AnyObject {
+    /// Необходимо передать ваш UIView либо nil если хотите использовать UIViewController
     var squareView: UIView? { get }
+    
+    /// Необходимо передать ваш UIViewController либо nil если хотите использовать UIView
     var squareViewController: UIViewController? { get }
 }
 
-public extension HasOtusHomeworkView {
-    var squareView: UIView? {
-        nil
-    }
-    
-    var squareViewController: UIViewController? {
-        nil
-    }
-}
-
-public class OtusHomeworkViewController: UIViewController, HasOtusHomeworkView {
-    
+public class OtusHomeworkViewController: UIViewController {
     public override func viewDidLoad() {
         view.backgroundColor = .gray
         let studentLabel = UILabel()
@@ -40,5 +32,15 @@ public class OtusHomeworkViewController: UIViewController, HasOtusHomeworkView {
             make.horizontalEdges.equalToSuperview()
             make.centerY.equalToSuperview()
         }
+    }
+}
+
+extension OtusHomeworkViewController: HasOtusHomeworkView {
+    public var squareView: UIView? {
+        view
+    }
+    
+    public var squareViewController: UIViewController? {
+        self
     }
 }
